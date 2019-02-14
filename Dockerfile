@@ -13,3 +13,5 @@ RUN cd /usr/src/bitcoin_exporter \
 FROM alpine:latest
 
 COPY --from=build /usr/src/bitcoin_exporter/bitcoin_exporter /bin/bitcoin_exporter
+
+CMD bitcoin_exporter
